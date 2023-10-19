@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  showDetailProduct: boolean = false;
 
   detailProduct(showDetail: Event | boolean):void {
-    console.log({showDetail});
+    (showDetail) 
+      ? this.showDetailProduct = !this.showDetailProduct 
+      : this.showDetailProduct = showDetail as boolean;
   }
 
 }

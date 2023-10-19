@@ -1,5 +1,5 @@
 
 <main class="Home">
     <app-card-product (showDetail)="detailProduct($event)"></app-card-product>
-    <app-product-detail></app-product-detail>
+    <app-product-detail [showDetail]="showDetailProduct"></app-product-detail>
 </main>

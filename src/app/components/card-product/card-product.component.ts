@@ -5,7 +5,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
   templateUrl: './card-product.component.html',
   styleUrls: ['./card-product.component.css']
 })
-export class CardProductComponent {
+export class CardProductComponent{
 
   @Output() showDetail =  new EventEmitter<boolean>(false);
 
