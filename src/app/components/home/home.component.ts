@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  detailProduct(showDetail: Event | boolean):void {
+    console.log({showDetail});
+  }
+
 }
