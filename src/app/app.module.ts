@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CardProductComponent } from './components/card-product/card-product.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule  } from '@angular/material/card'
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +14,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
