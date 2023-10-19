@@ -1,0 +1,14 @@
+.card-product-detail {
+    width: 40vw;
+    max-width: 750px;
+    position: absolute;
+    right: -100vw;
+    top: 0;
+    height: 100vh;
+    transition: all 1.4s ease;
+}
+
+.active {
+    right: 0;
+    top: 0;
+}

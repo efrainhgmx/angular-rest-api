@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ProductDetailComponent {
 
+  showDetail:boolean = false;
+
+
+  onShowDetail():void {
+    this.showDetail = !this.showDetail;
+  }
 }
