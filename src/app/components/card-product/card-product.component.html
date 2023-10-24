@@ -1,11 +1,11 @@
 <h1>Lista de productos</h1>
 <mat-card class="card-container">
     <mat-card-header>
-        <mat-card-title>title</mat-card-title>
+        <mat-card-title>{{ productInfo.title }}</mat-card-title>
         <mat-card-subtitle>subtitle</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae mollitia harum ducimus exercitationem nihil dignissimos aliquid beatae eligendi, enim sint officiis odit sit voluptate ex pariatur cum sapiente cumque architecto!
+        <p>{{ productInfo.description }}</p>
     </mat-card-content>
     <mat-card-actions>
         <button (click)="showDetailProduct()" mat-button>Ok</button>

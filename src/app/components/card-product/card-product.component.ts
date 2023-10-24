@@ -1,4 +1,5 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, Input } from '@angular/core';
+import { Product } from 'src/app/models/products.models';
 
 @Component({
   selector: 'app-card-product',
@@ -7,6 +8,7 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class CardProductComponent{
 
+  @Input() productInfo!: Product;
   @Output() showDetail =  new EventEmitter<boolean>(false);
 
   showDetailProduct():void {
