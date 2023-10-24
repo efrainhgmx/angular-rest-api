@@ -6,7 +6,8 @@ import { CardProductComponent } from './components/card-product/card-product.com
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule  } from '@angular/material/card';
-import { ProductDetailComponent } from './components/product-detail/product-detail.component'
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { HttpClientModule } from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
