@@ -10,8 +10,10 @@ export class CardProductComponent{
 
   @Input() productInfo!: Product;
   @Output() showDetail =  new EventEmitter<boolean>(false);
+  @Output() idProduct = new EventEmitter<number>();
 
-  showDetailProduct():void {
+  showDetailProduct(id: number):void {
     this.showDetail.emit(true);
+    this.idProduct.emit(id);
   }
 }

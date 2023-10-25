@@ -9,6 +9,7 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class HomeComponent implements OnInit{
   showDetailProduct: boolean = false;
+  idDetail: number = 0;
   products: Product[] = [];
 
   constructor(private productService: ProductService){}
@@ -26,6 +27,11 @@ export class HomeComponent implements OnInit{
     (showDetail) 
       ? this.showDetailProduct = !this.showDetailProduct 
       : this.showDetailProduct = showDetail as boolean;
+  }
+
+  idProductDetail(id: number):void {
+    this.idDetail = id;
+    console.log(id)
   }
 
 }

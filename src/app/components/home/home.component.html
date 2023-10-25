@@ -2,7 +2,7 @@
 <main class="Home">
     <h2 *ngIf="products.length === 0; else listProducts">Nothing to show here</h2>
     <ng-template #listProducts>
-        <app-card-product *ngFor="let product of products" (showDetail)="detailProduct($event)" [productInfo]="product"></app-card-product>
+        <app-card-product *ngFor="let product of products" (showDetail)="detailProduct($event)" [productInfo]="product" (idProduct)="idProductDetail($event)"></app-card-product>
     </ng-template>
     <app-product-detail [showDetail]="showDetailProduct"></app-product-detail>
 </main>
